@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".TabLayoutFabButtonToolBarActivity">
+
+    <item
+        android:id="@+id/action_favorite"
+        android:title="User"
+        android:icon="@drawable/ic_attachment_black_24dp"
+        app:showAsAction="always"></item>
+    <item
+        android:id="@+id/action_favorite1"
+        android:title="Menu1"
+        android:icon="@drawable/ic_attachment_black_24dp"
+       ></item>
+    <item
+        android:id="@+id/action_favorite2"
+        android:title="Menu2"
+        android:icon="@drawable/ic_attachment_black_24dp"
+        ></item>
+    <item
+        android:id="@+id/action_favorite3"
+        android:title="Menu3"
+        android:icon="@drawable/ic_attachment_black_24dp"
+        ></item>
+</menu>

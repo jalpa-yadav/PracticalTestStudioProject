@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/a" >
+
+    <fragment android:id="@+id/a"
+       android:name="com.fragments.FragmentA"
+        android:label="a"
+        tools:layout="@layout/fragmentA">
+        <action android:id="@+id/action_a_to_b"
+            app:destination="@id/b"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"/>
+    </fragment>
+
+    <fragment android:id="@+id/b"
+        android:name="com.fragments.FragmentB"
+        android:label="b"
+        tools:layout="@layout/fragment_b"        >
+        <action android:id="@+id/action_b_to_c"
+            app:destination="@id/c"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpTo="@id/c"
+            app:popUpToInclusive="true"/>
+    </fragment>
+
+    <fragment android:id="@+id/c"
+        android:name="com.fragments.FragmentC"
+        android:label="c"
+        tools:layout="@layout/fragment_c">
+        <action android:id="@+id/action_c_to_a"
+            app:destination="@id/a"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpTo="@id/a"
+            app:popUpToInclusive="true"/>
+    </fragment>
+
+</navigation>
