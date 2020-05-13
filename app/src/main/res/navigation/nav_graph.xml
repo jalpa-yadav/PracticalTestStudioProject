@@ -8,7 +8,7 @@
     <fragment android:id="@+id/a"
        android:name="com.fragments.FragmentA"
         android:label="a"
-        tools:layout="@layout/fragmentA">
+        tools:layout="@layout/fragment_a">
         <action android:id="@+id/action_a_to_b"
             app:destination="@id/b"
             app:enterAnim="@anim/nav_default_enter_anim"

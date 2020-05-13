@@ -45,16 +45,41 @@
         <activity
             android:name=".TabLayoutFabButtonToolBarActivity"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".RecyclerListUsingDataBinding" />
-        <activity android:name=".DataBindingActivity" />
-        <activity android:name=".NavigationControllerActivity" />
-        <activity android:name=".RecyclerListServiceCallUsingVolley" />
-        <activity android:name=".RecyclerListLocalDB" />
-        <activity android:name=".MainActivity" >  <intent-filter>
-        <action android:name="android.intent.action.MAIN" />
 
-        <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter></activity>
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".RecyclerListLocalDB"></activity>
+
+        <activity android:name=".RecyclerListUsingDataBinding">
+            <!--        <intent-filter>-->
+            <!--            <action android:name="android.intent.action.MAIN" />-->
+
+            <!--            <category android:name="android.intent.category.LAUNCHER" />-->
+            <!--        </intent-filter>-->
+        </activity>
+        <activity android:name=".DataBindingActivity">
+            <!--            <intent-filter>
+                    <action android:name="android.intent.action.MAIN" />
+
+                    <category android:name="android.intent.category.LAUNCHER" />
+                    </intent-filter>-->
+        </activity>
+        <activity android:name=".NavigationControllerActivity">
+            <!--            <intent-filter>-->
+            <!--                <action android:name="android.intent.action.MAIN" />-->
+
+            <!--                <category android:name="android.intent.category.LAUNCHER" />-->
+            <!--            </intent-filter>-->
+        </activity>
+
+        <activity android:name=".RecyclerListServiceCallUsingVolley" />
+
     </application>
 
 </manifest>

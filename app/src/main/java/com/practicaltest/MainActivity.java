@@ -107,7 +107,7 @@ public class MainActivity extends AppCompatActivity {
             btnSaveData.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    if (validateData()) {
+//                    if (validateData()) {
                         try {
                             Log.v("Name ", editName.getText().toString());
                             Log.v("Phone ", editPhone.getText().toString());
@@ -120,7 +120,7 @@ public class MainActivity extends AppCompatActivity {
                         } catch (Exception e) {
                             e.printStackTrace();
                         }
-                    }
+//                    }
                 }
             });
             btnShowList = findViewById(R.id.btnShowList);

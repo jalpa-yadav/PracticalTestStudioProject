@@ -1,6 +1,5 @@
 package com.adapters;
 
-import android.graphics.BitmapFactory;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -58,7 +57,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.MyView
         holder.tvEmail.setText(listUserData.get(position).email);
         holder.tvGender.setText(listUserData.get(position).gender);
         holder.tvPhone.setText(listUserData.get(position).phoneNumber);
-        holder.ivProfilePic.setImageBitmap(BitmapFactory.decodeFile(listUserData.get(position).image));
+        //holder.ivProfilePic.setImageBitmap(BitmapFactory.decodeFile(listUserData.get(position).image));
     }
 
     // Return the size of your dataset (invoked by the layout manager)

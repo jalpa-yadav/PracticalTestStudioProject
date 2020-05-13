@@ -8,17 +8,17 @@
 
     <ImageView
         android:id="@+id/ivProfilePic"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:layout_margin="20dp"
         android:scaleType="centerCrop"
-        android:src="@drawable/ic_launcher_background"
-        app:srcCompat="@drawable/ic_attachment_black_24dp"
-        tools:srcCompat="@drawable/ic_attachment_black_24dp" />
+        android:src="@drawable/person"
+     />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
         android:orientation="vertical">
 
         <TextView
